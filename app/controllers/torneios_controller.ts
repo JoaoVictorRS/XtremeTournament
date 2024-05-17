@@ -1,4 +1,39 @@
-// import type { HttpContext } from '@adonisjs/core/http'
+import Torneio from '#models/torneio'
+import type { HttpContext } from '@adonisjs/core/http'
 
 export default class TorneiosController {
+  async index({request}: HttpContext) {
+  
+      const page = request.input('page', 1)
+      const howMany = request.input('howMany', 5)
+  
+      return await Torneio.query().paginate(page, howMany)
+    }
+  
+    async show({params}: HttpContext){
+      return await Torneio.findOrFail(params.id)
+    }
+    
+    async store({request}: HttpContext){
+  
+      const dados = request.only(['nome', 'dataInicio', 'dataFim', 'equipeId', 'jogoId', 'partidaId'])
+  
+      return await Torneio.create(dados)
+    }
+  
+    async update({params, request}: HttpContext){
+      const torneio = await Torneio.findOrFail(params.id)
+      const dados = request.only(['nome', 'dataInicio', 'dataFim', 'equipeId', 'jogoId', 'partidaId'])
+  
+      torneio.merge(dados)
+  
+      return await torneio.save()
+    }
+  
+    async destroy({params}: HttpContext){
+      const torneio = await Torneio.findOrFail(params.id)
+      
+      await torneio.delete()
+      return {msg: 'Registro deletedo com sucesso', torneio}
+    }
 }
