@@ -5,6 +5,12 @@ export default class PartidaEquipe extends BaseModel {
   @column({ isPrimary: true })
   declare id: number
 
+  @column()
+  declare equipeId: number
+
+  @column()
+  declare partidaId: number
+
   @column.dateTime({ autoCreate: true })
   declare createdAt: DateTime
 

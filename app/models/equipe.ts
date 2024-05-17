@@ -5,6 +5,12 @@ export default class Equipe extends BaseModel {
   @column({ isPrimary: true })
   declare id: number
 
+  @column()
+  declare nome: string
+
+  @column()
+  declare dataCriacao: Date
+
   @column.dateTime({ autoCreate: true })
   declare createdAt: DateTime
 

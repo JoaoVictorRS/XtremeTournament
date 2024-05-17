@@ -5,6 +5,12 @@ export default class Jogadore extends BaseModel {
   @column({ isPrimary: true })
   declare id: number
 
+  @column()
+  declare nomeReal: string
+
+  @column()
+  declare nick: string
+
   @column.dateTime({ autoCreate: true })
   declare createdAt: DateTime
 

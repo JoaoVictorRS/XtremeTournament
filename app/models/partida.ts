@@ -5,6 +5,12 @@ export default class Partida extends BaseModel {
   @column({ isPrimary: true })
   declare id: number
 
+  @column()
+  declare dataPartida: Date
+
+  @column()
+  declare resultado: string
+
   @column.dateTime({ autoCreate: true })
   declare createdAt: DateTime
 
