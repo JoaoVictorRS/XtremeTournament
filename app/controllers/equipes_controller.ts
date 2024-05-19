@@ -16,14 +16,14 @@ export default class EquipesController {
     
     async store({request}: HttpContext){
   
-      const dados = request.only(['nome', 'data_criacao'])
+      const dados = request.only(['nome', 'regiao'])
   
       return await Equipe.create(dados)
     }
   
     async update({params, request}: HttpContext){
       const equipe = await Equipe.findOrFail(params.id)
-      const dados = request.only(['nome', 'data_criacao'])
+      const dados = request.only(['nome', 'regiao'])
   
       equipe.merge(dados)
   

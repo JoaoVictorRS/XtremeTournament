@@ -11,6 +11,12 @@ export default class Jogadore extends BaseModel {
   @column()
   declare nick: string
 
+  @column()
+  declare idade: number
+
+  @column()
+  declare pais: string
+
   @column.dateTime({ autoCreate: true })
   declare createdAt: DateTime
 
