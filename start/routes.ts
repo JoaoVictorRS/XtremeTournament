@@ -14,6 +14,7 @@ import JogadoresController from '#controllers/jogadores_controller'
 import JogosController from '#controllers/jogos_controller'
 import PartidaEquipesController from '#controllers/partida_equipes_controller'
 import PartidasController from '#controllers/partidas_controller'
+import TorneioEquipesController from '#controllers/torneio_equipes_controller'
 import TorneiosController from '#controllers/torneios_controller'
 import router from '@adonisjs/core/services/router'
 
@@ -42,6 +43,7 @@ router.resource('/equipe_jogadores', EquipeJogadorsController).apiOnly()
 router.resource('/partidas', PartidasController).apiOnly()
 router.resource('/partida_equipes', PartidaEquipesController).apiOnly()
 router.resource('/torneios', TorneiosController).apiOnly()
+router.resource('/torneio_equipes', TorneioEquipesController).apiOnly()
 
 //Jogos e generos
 router.resource('/jogos', JogosController).apiOnly()

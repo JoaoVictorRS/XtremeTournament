@@ -5,9 +5,9 @@ export default class GenerosController {
   async index({request}: HttpContext) {
   
       const page = request.input('page', 1)
-      const howMany = request.input('howMany', 5)
+      const perPage = request.input('perPage', 5)
   
-      return await Genero.query().paginate(page, howMany)
+      return await Genero.query().paginate(page, perPage)
     }
   
     async show({params}: HttpContext){

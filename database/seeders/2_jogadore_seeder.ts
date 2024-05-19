@@ -226,6 +226,7 @@ export default class extends BaseSeeder {
         idade: 24,
         pais: 'United States'
       },
+      //w7
       {
         nomeReal: 'Gabriel Fernandes',
         nick: 'volpz',

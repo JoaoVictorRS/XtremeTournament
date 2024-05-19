@@ -5,9 +5,9 @@ export default class PartidasController {
   async index({request}: HttpContext) {
   
       const page = request.input('page', 1)
-      const howMany = request.input('howMany', 5)
+      const perPage = request.input('perPage', 5)
   
-      return await Partida.query().paginate(page, howMany)
+      return await Partida.query().paginate(page, perPage)
     }
   
     async show({params}: HttpContext){

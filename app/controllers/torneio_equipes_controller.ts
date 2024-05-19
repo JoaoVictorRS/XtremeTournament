@@ -5,9 +5,9 @@ export default class TorneioEquipesController {
   async index({request}: HttpContext) {
   
       const page = request.input('page', 1)
-      const howMany = request.input('howMany', 5)
+      const perPage = request.input('perPage', 5)
   
-      return await TorneioEquipe.query().paginate(page, howMany)
+      return await TorneioEquipe.query().paginate(page, perPage)
     }
   
     async show({params}: HttpContext){
