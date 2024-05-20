@@ -9,19 +9,13 @@ export default class Torneio extends BaseModel {
   declare nome: string
 
   @column()
-  declare dataInicio: DateTime
+  declare dataInicio: string | null
 
   @column()
-  declare dataFim: DateTime
-
-  @column()
-  declare equipeId: number
+  declare dataFim: string | null
 
   @column()
   declare jogoId: number
-
-  @column()
-  declare partidaId: number
 
   @column.dateTime({ autoCreate: true })
   declare createdAt: DateTime

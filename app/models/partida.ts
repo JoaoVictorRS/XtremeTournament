@@ -6,7 +6,7 @@ export default class Partida extends BaseModel {
   declare id: number
 
   @column()
-  declare dataPartida: Date
+  declare dataPartida: string | null
 
   @column()
   declare resultado: string
