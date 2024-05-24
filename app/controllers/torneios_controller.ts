@@ -11,7 +11,12 @@ export default class TorneiosController {
     }
   
     async show({params}: HttpContext){
-      return await Torneio.findOrFail(params.id)
+      return await Torneio.query()
+        .where('id', params.id)
+        .preload('jogo')
+        .preload('equipes')
+        .preload('partidas')
+        .first()
     }
     
     async store({request}: HttpContext){

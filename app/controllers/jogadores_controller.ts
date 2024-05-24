@@ -11,7 +11,10 @@ export default class JogadoresController {
   }
 
   async show({ params }: HttpContext) {
-    return await Jogadore.findOrFail(params.id)
+    return await Jogadore.query()
+      .where('id', params.id)
+      .preload('equipe')
+      .first()
   }
 
   async store({ request }: HttpContext) {

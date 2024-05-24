@@ -1,5 +1,8 @@
 import { DateTime } from 'luxon'
-import { BaseModel, column } from '@adonisjs/lucid/orm'
+import { BaseModel, column, hasMany, manyToMany } from '@adonisjs/lucid/orm'
+import Equipe from './equipe.js'
+import type { HasMany, ManyToMany } from '@adonisjs/lucid/types/relations'
+import EquipeJogador from './equipe_jogador.js'
 
 export default class Jogadore extends BaseModel {
   @column({ isPrimary: true })
@@ -22,4 +25,12 @@ export default class Jogadore extends BaseModel {
 
   @column.dateTime({ autoCreate: true, autoUpdate: true })
   declare updatedAt: DateTime
+
+  @manyToMany(() => Equipe, {
+    'pivotTable': 'equipe_jogadors',
+  })
+  declare equipe: ManyToMany<typeof Equipe>
+
+  @hasMany(() => EquipeJogador)
+  declare equipeJogador: HasMany<typeof EquipeJogador>
 }
