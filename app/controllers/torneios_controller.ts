@@ -21,14 +21,14 @@ export default class TorneiosController {
     
     async store({request}: HttpContext){
   
-      const dados = request.only(['nome', 'dataInicio', 'dataFim', 'equipeId', 'jogoId', 'partidaId'])
+      const dados = request.only(['nome', 'dataInicio', 'dataFim', 'jogoId'])
   
       return await Torneio.create(dados)
     }
   
     async update({params, request}: HttpContext){
       const torneio = await Torneio.findOrFail(params.id)
-      const dados = request.only(['nome', 'dataInicio', 'dataFim', 'equipeId', 'jogoId', 'partidaId'])
+      const dados = request.only(['nome', 'dataInicio', 'dataFim', 'jogoId'])
   
       torneio.merge(dados)
   

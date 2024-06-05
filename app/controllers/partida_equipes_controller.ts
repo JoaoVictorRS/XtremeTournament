@@ -20,7 +20,7 @@ export default class PartidaEquipesController {
 
   async store({ request }: HttpContext) {
 
-    const dados = request.only(['jogadorId', 'equipeId'])
+    const dados = request.only(['partidaId', 'equipeId'])
 
     return await PartidaEquipe.create(dados)
   }

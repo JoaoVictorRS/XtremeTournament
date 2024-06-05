@@ -20,14 +20,14 @@ export default class PartidasController {
 
   async store({ request }: HttpContext) {
 
-    const dados = request.only(['dataPartida', 'descricao'])
+    const dados = request.only(['dataPartida', 'resultado'])
 
     return await Partida.create(dados)
   }
 
   async update({ params, request }: HttpContext) {
     const partida = await Partida.findOrFail(params.id)
-    const dados = request.only(['dataPartida', 'descricao'])
+    const dados = request.only(['dataPartida', 'resultado'])
 
     partida.merge(dados)
 
