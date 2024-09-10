@@ -23,6 +23,9 @@ export default class Torneio extends BaseModel {
   @column()
   declare jogoId: number
 
+  @column()
+  declare logoCamp: string
+
   @column.dateTime({ autoCreate: true })
   declare createdAt: DateTime
 

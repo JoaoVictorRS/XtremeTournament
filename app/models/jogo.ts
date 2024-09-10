@@ -17,6 +17,9 @@ export default class Jogo extends BaseModel {
   @column()
   declare generoId: number
 
+  @column()
+  declare foto: string
+
   @column.dateTime({ autoCreate: true })
   declare createdAt: DateTime
 

@@ -10,6 +10,7 @@ export default class extends BaseSchema {
       table.string('nick', 45).notNullable()
       table.integer('idade').nullable()
       table.string('pais').nullable()
+      table.text('foto').nullable()
 
       table.timestamp('created_at')
       table.timestamp('updated_at')

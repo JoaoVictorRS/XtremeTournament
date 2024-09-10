@@ -8,6 +8,7 @@ export default class extends BaseSchema {
       table.increments('id')
       table.string('nome', 45).notNullable().unique()
       table.text('descricao')
+      table.text('foto').nullable()
       table.integer('genero_id').unsigned().references('id').inTable('generos').notNullable()
 
       table.timestamp('created_at')

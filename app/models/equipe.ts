@@ -18,6 +18,9 @@ export default class Equipe extends BaseModel {
   @column()
   declare regiao: string
 
+  @column()
+  declare logo: string
+
   @column.dateTime({ autoCreate: true })
   declare createdAt: DateTime
 

@@ -20,6 +20,9 @@ export default class Jogadore extends BaseModel {
   @column()
   declare pais: string
 
+  @column()
+  declare foto: string
+
   @column.dateTime({ autoCreate: true })
   declare createdAt: DateTime
 
