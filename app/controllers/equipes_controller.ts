@@ -5,7 +5,7 @@ export default class EquipesController {
   async index({ request }: HttpContext) {
 
     const page = request.input('page', 1)
-    const perPage = request.input('perPage', 5)
+    const perPage = request.input('perPage', 30)
 
     return await Equipe.query().paginate(page, perPage)
   }
@@ -20,14 +20,14 @@ export default class EquipesController {
 
   async store({ request }: HttpContext) {
 
-    const dados = request.only(['nome', 'regiao'])
+    const dados = request.only(['nome', 'regiao', 'logo'])
 
     return await Equipe.create(dados)
   }
 
   async update({ params, request }: HttpContext) {
     const equipe = await Equipe.findOrFail(params.id)
-    const dados = request.only(['nome', 'regiao'])
+    const dados = request.only(['nome', 'regiao', 'logo'])
 
     equipe.merge(dados)
 

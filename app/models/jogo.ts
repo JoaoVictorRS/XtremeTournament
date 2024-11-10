@@ -20,6 +20,9 @@ export default class Jogo extends BaseModel {
   @column()
   declare foto: string
 
+  @column()
+  declare cover: string
+
   @column.dateTime({ autoCreate: true })
   declare createdAt: DateTime
 

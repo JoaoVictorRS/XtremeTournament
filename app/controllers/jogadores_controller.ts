@@ -5,7 +5,7 @@ export default class JogadoresController {
   async index({ request }: HttpContext) {
 
     const page = request.input('page', 1)
-    const perPage = request.input('perPage', 5)
+    const perPage = request.input('perPage', 6)
 
     return await Jogadore.query().paginate(page, perPage)
   }
@@ -19,14 +19,14 @@ export default class JogadoresController {
 
   async store({ request }: HttpContext) {
 
-    const dados = request.only(['nome_real', 'nick', 'idade', 'pais'])
+    const dados = request.only(['nome_real', 'nick', 'idade', 'pais', 'foto'])
 
     return await Jogadore.create(dados)
   }
 
   async update({ params, request }: HttpContext) {
     const jogadore = await Jogadore.findOrFail(params.id)
-    const dados = request.only(['nome_real', 'nick', 'idade', 'pais'])
+    const dados = request.only(['nome_real', 'nick', 'idade', 'pais', 'foto'])
 
     jogadore.merge(dados)
 
