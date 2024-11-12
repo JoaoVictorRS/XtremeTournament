@@ -6,146 +6,146 @@ export default class extends BaseSeeder {
     return await Jogadore.createMany([
       {
         nomeReal: 'Valerii Vakhovskyi',
-        foto: 'https://ggscore.com/media/logo/p41630.png?100',
+        foto: 'https://d1pzotwf6uuj6w.cloudfront.net/publications/upload/publication-514/21/71/u_61e1c2fcdf467.png',
         nick: 'b1t',
         idade: 21,
         pais: 'Ukraine'
       },
       {
         nomeReal: 'Justinas Lekavicius',
-        foto: 'https://ggscore.com/media/logo/p44313.png?42',
+        foto: 'https://img-cdn.hltv.org/playerbodyshot/LEVIO874MT6HpnUZqZgIAa.png?bg=3e4c54&h=800&ixlib=java-2.1.0&rect=121%2C0%2C467%2C467&w=800&s=4d2d3c14d759bc3898f9c1773158e2cb',
         nick: 'jL',
         idade: 24,
         pais: 'Lithuania'
       },
       {
         nomeReal: 'Aleksi Virolainen',
-        foto: 'https://ggscore.com/media/logo/p15069.png?11',
+        foto: 'https://img-cdn.hltv.org/playerbodyshot/CS5O_NY6wiy7_JG2V2GWYD.png?ixlib=java-2.1.0&w=400&s=b7bcd079508c8f59cc1bdf73cfd404bc',
         nick: 'Aleksib',
         idade: 27,
         pais: 'Finland'
       },
       {
         nomeReal: 'Mihai Ivan',
-        foto: 'https://ggscore.com/media/logo/p23914.png?48',
+        foto: 'https://prosettings.net/wp-content/uploads/im.png',
         nick: 'iM',
         idade: 24,
         pais: 'Romania'
       },
       {
         nomeReal: 'Ihor Zhdanov',
-        foto: 'https://ggscore.com/media/logo/p56170.png?80',
+        foto: 'https://img-cdn.hltv.org/playerbodyshot/-_UTOwRq10TZ6Fzs_Gp_m1.png?bg=3e4c54&h=800&ixlib=java-2.1.0&rect=121%2C0%2C467%2C467&w=800&s=89ad0f6ca8237628df613f467f57d9e2',
         nick: 'w0nderful',
         idade: 19,
         pais: 'Ukraine'
       },
       {
         nomeReal: 'Sasha Kostyliev',
-        foto: 'https://ggscore.com/media/logo/p3997.png?92',
+        foto: 'https://img-cdn.hltv.org/playerbodyshot/FJie4BbfsiM5nurHLjBVZz.png?ixlib=java-2.1.0&w=400&s=5f707403f38dc688c24300cc356e6cbc',
         nick: 's1mple',
         idade: 26,
         pais: 'Ukraine'
       },
       {
         nomeReal: 'Alexander Bro',
-        foto: 'https://ggscore.com/media/logo/p63049.png?26',
+        foto: 'https://assets.blast.tv/images/players/8086a997-646c-4bb0-9565-d794f8d32378',
         nick: 'br0',
         idade: 22,
         pais: 'Denmark'
       },
       {
         nomeReal: 'Nicolai Hvilshøj Reedtz',
-        foto: 'https://ggscore.com/media/logo/p3883.png?52',
+        foto: 'https://liquipedia.net/commons/images/thumb/e/ed/Device_%40_Fragbite_Masters_S5.jpg/450px-Device_%40_Fragbite_Masters_S5.jpg',
         nick: 'dev1ce',
         idade: 28,
         pais: 'Denmark'
       },
       {
         nomeReal: 'Victor Staehr',
-        foto: 'https://ggscore.com/media/logo/p64764.png?46',
+        foto: 'https://img-cdn.hltv.org/playerbodyshot/cgeOv6vteLGk0Al0t5uox7.png?bg=3e4c54&h=800&ixlib=java-2.1.0&rect=121%2C0%2C467%2C467&w=800&s=3a0eb519b922f956cdd62ea226b8f5f8',
         nick: 'Staehr',
         idade: 19,
         pais: 'Denmark'
       },
       {
         nomeReal: 'Jakob Nygaard',
-        foto: 'https://ggscore.com/media/logo/p40384.png?40',
+        foto: 'https://liquipedia.net/commons/images/thumb/c/cc/Jabbi_at_Leo_Vegas_Open.png/162px-Jabbi_at_Leo_Vegas_Open.png',
         nick: 'Jabbi',
         idade: 20,
         pais: 'Denmark'
       },
       {
         nomeReal: 'Martin Lund',
-        foto: 'https://ggscore.com/media/logo/p13930.png?82',
+        foto: 'https://img-cdn.hltv.org/playerbodyshot/GHOeYJhnskCRw6WIVple13.png?bg=3e4c54&h=800&ixlib=java-2.1.0&rect=121%2C0%2C467%2C467&w=800&s=27d1e3e450a8e56da69dafa9c5560e0c',
         nick: 'Stavn',
         idade: 22,
         pais: 'Denmark'
       },
       {
         nomeReal: 'Gabriel Toledo de Alcântara Sguario',
-        foto: 'https://ggscore.com/media/logo/p3930.png?32',
+        foto: 'https://img-cdn.hltv.org/playerbodyshot/Wf26SO_o8nvnsLh0AqZXc5.png?ixlib=java-2.1.0&w=400&s=36b7189a4ae7b020d0acb087fd44777a',
         nick: 'FalleN',
         idade: 32,
         pais: 'Brazil'
       },
       {
         nomeReal: 'Kaike Silva Cerato',
-        foto: 'https://ggscore.com/media/logo/p25160.png?67',
+        foto: 'https://steamuserimages-a.akamaihd.net/ugc/1834649355088184834/C714738CEFEDA44A34A1A18B6B122B7C146257CB/',
         nick: 'KSCERATO',
         idade: 24,
         pais: 'Brazil'
       },
       {
         nomeReal: 'Yuri Gomes dos Santos Boian',
-        foto: 'https://ggscore.com/media/logo/p20930.png?83',
+        foto: 'https://img-cdn.hltv.org/playerbodyshot/i6UGhkYxrhutAOmWZT0-8O.png?ixlib=java-2.1.0&w=400&s=2cd696f6ff4baf5680a43d537214b6eb',
         nick: 'Yuurih',
         idade: 24,
         pais: 'Brazil'
       },
       {
         nomeReal: 'Marcelo Cespedes',
-        foto: 'https://ggscore.com/media/logo/p19453.png?35',
+        foto: 'https://img-cdn.hltv.org/playerbodyshot/1UmLZkSSAfBosakeRR3gwZ.png?ixlib=java-2.1.0&w=400&s=4b513eb29f7896053a6996ef30575ed8',
         nick: 'Chelo',
         idade: 25,
         pais: 'Brazil'
       },
       {
         nomeReal: 'Kayke Bertolucci',
-        foto: 'https://ggscore.com/media/logo/p62782.png?99',
+        foto: 'https://img-cdn.hltv.org/playerbodyshot/D7ceEXm_X7sFQGl2U5V1nZ.png?ixlib=java-2.1.0&w=400&s=eb0073d3c109839c08cda5e511aa4f96',
         nick: 'kye',
         pais: 'Brazil'
       },
       {
         nomeReal: 'Nemanja Isaković',
-        foto: 'https://ggscore.com/media/logo/p14893.png?80',
+        foto: 'https://img-cdn.hltv.org/playerbodyshot/2lVBxT-qpZV0Qbdf-5Vo0S.png?bg=3e4c54&h=800&ixlib=java-2.1.0&rect=121%2C0%2C467%2C467&w=800&s=dad766179a6f4fb8e091040df3af1396',
         nick: 'Nexa',
         idade: 27,
         pais: 'Serbia'
       },
       {
         nomeReal: 'Nikola Kovač',
-        foto: 'https://ggscore.com/media/logo/p3920.png?94',
+        foto: 'https://img-cdn.hltv.org/playerbodyshot/eefPmsiMIo4dAiiPUmZE6-.png?ixlib=java-2.1.0&w=400&s=8d9765f9d2c40c13d7bd6c96c45a2849',
         nick: 'NiKo',
         idade: 27,
         pais: 'Bosnia and Herzegovina'
       },
       {
         nomeReal: 'Nemanja Kovač',
-        foto: 'https://ggscore.com/media/logo/p7108.png?57',
+        foto: 'https://prosettings.net/wp-content/uploads/hunter.png',
         nick: 'HuNter-',
         idade: 28,
         pais: 'Bosnia and Herzegovina'
       },
       {
         nomeReal: 'Ilya Osipov',
-        foto: 'https://ggscore.com/media/logo/p37629.png?38',
+        foto: 'https://steamuserimages-a.akamaihd.net/ugc/1831279898718611500/EC3C1C9290315A049DA8AF814A86282C53D72873/',
         nick: 'm0NESY',
         idade: 19,
         pais: 'Russia'
       },
       {
         nomeReal: 'Rasmus Nielsen',
-        foto: 'https://ggscore.com/media/logo/p18949.png?5',
+        foto: 'https://prosettings.net/wp-content/uploads/hooxi.png',
         nick: 'HooXi',
         idade: 28,
         pais: 'Denmark'
