@@ -9,7 +9,7 @@ export default class extends BaseSchema {
       table.string('nome', 45).notNullable().unique()
       table.string('data_inicio').notNullable()
       table.string('data_fim').notNullable()
-      table.text('logo_campeonato').nullable()
+      table.text('logo_camp').nullable()
       table.integer('jogo_id').unsigned().references('id').inTable('jogos').notNullable()
 
       table.timestamp('created_at')
