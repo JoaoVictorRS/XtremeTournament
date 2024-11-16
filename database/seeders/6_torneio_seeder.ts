@@ -17,21 +17,21 @@ export default class extends BaseSeeder {
         dataInicio: DateTime.fromISO('2024-05-24').toISODate(),
         dataFim: DateTime.fromISO('2024-05-26').toISODate(),
         jogoId: 2,
-        logoCamp: 'https://liquipedia.net/commons/images/thumb/b/b8/BLAST_R6_Major_Manchester_lightmode.png/600px-BLAST_R6_Major_Manchester_lightmode.png'
+        logoCamp: 'https://staticg.sportskeeda.com/editor/2024/04/1349c-17142736997245-1920.jpg?w=640'
       },
       {
         nome: 'VALORANT Challengers Brazil 2024',
         dataInicio: DateTime.fromISO('2024-05-21').toISODate(),
         dataFim: DateTime.fromISO('2024-06-18').toISODate(),
         jogoId: 3,
-        logoCamp: 'https://liquipedia.net/commons/images/thumb/0/01/Gamers_Club_VCT_Challengers_Brazil_allmode.png/600px-Gamers_Club_VCT_Challengers_Brazil_allmode.png'
+        logoCamp: 'https://static.valorantzone.gg/news/2021/08/12121157/VALORANT-CHALLENGERS-BRASIL.jpg'
       },
       {
         nome: 'Apex Legends Global Series: 2024 Championship',
         dataInicio: DateTime.fromISO('2024-09-06').toISODate(),
         dataFim: DateTime.fromISO('2024-09-10').toISODate(),
         jogoId: 4,
-        logoCamp: 'https://liquipedia.net/commons/images/thumb/d/d2/ALGS_Championship_2022_lightmode.png/600px-ALGS_Championship_2022_lightmode.png'
+        logoCamp: 'https://media.contentapi.ea.com/content/dam/apex-legends/compete/images/2021/07/algs-2-0-featured-image.jpg.adapt.crop191x100.1200w.jpg'
       },
       {
         nome: '2024 World Championship',
